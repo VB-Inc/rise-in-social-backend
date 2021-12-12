@@ -1,0 +1,28 @@
+{
+  "name": "rest-fastify",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node --inspect src/index.js"
+  },
+  "dependencies": {
+    "@prisma/client": "3.5.0",
+    "fastify": "3.24.1",
+    "fastify-passport": "^0.4.3",
+    "fastify-secure-session": "^3.0.0",
+    "passport": "^0.5.0",
+    "passport-twitter": "^1.0.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/register": "^7.0.0",
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.15",
+    "prisma": "3.5.0"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  }
+}
